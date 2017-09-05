@@ -1,20 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  </body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <style type="text/css">
+    #cover {
+      margin-top: 4em;
+      margin-bottom: 4em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Обложка -->
+  <div class="container" id="cover">
+    <div class="row">
+      <!-- Обложка -->
+      <div class="col-md-4"><img src="./cover.png" class="img-fluid" alt="Проектирование на UML. Сборник задач"></img>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <h1>Сборник задач по проектированию программных систем</h1>
+          <hr/>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- краткое описание -->
+            <div class="row">
+              <p class="lead">Краткое описание. "Нет никого, кто любил бы боль саму по себе, кто искал бы её и кто хотел бы иметь её просто
+                потому, что это боль."</p>
+            </div>
+            <!-- где купить -->
+            <div class="row">
+              <div class="col-md-12">
+                <h3>Где купить</h3>
+                <ul>
+                  <li><a href="https://www.litres.ru/mett-vaysfeld/obektno-orientirovannoe-myshlenie/">На ЛитРес</a></li>
+                  <li><a href="https://www.amazon.com/Object-Oriented-Analysis-Design-Applications-3rd/dp/020189551X/ref=sr_1_4?ie=UTF8&qid=1504605363&sr=8-4&keywords=ooad">В Amazon</a></li>
+                  <li><a href="http://www.ozon.ru/context/detail/id/19665827/">В Ozon.ru</a></li>
+                  <li><a href="http://dmkpress.com/catalog/computer/data/978-5-97060-554-7/">У издательства</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Содержание -->
+            <h5>Содержание</h5>
+            <ul>
+              <li>Нотация UML</li>
+              <li>Классы и объекты</li>
+              <li>Варианты использования</li>
+              <li>Моделирование поведения</li>
+              <li>Принципы SOLID</li>
+              <li>Применение паттернов проектирования GoF</li>
+              <li>Моделирование бизнес-процессов</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="contacts">
+    <div class="row">
+      <!-- Авторы и контакты -->
+      <div class="col-md-12">
+        <!--<h2 align=center>Авторы и контакты</h2>-->
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Контакты</h3>
+            <div>
+              <ul>
+                <li><a href="https://www.litres.ru/mett-vaysfeld/obektno-orientirovannoe-myshlenie/">Твиттер</a></li>
+                <li><a href="https://www.amazon.com/Object-Oriented-Analysis-Design-Applications-3rd/dp/020189551X/ref=sr_1_4?ie=UTF8&qid=1504605363&sr=8-4&keywords=ooad">Группа в vk.com</a></li>
+                <li><a href="http://www.ozon.ru/context/detail/id/19665827/">Группа в facebook</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3" align=center>
+            <img class="rounded-circle" src="https://mipt.ru/upload/035/khritankov.jpg?l=700" width="140" height="140">
+            <h3>Хританков Антон</h3>
+            <p>Окончил с отличием ФУПМ МФТИ в 2007г., в 2010г. защитил диссертацию по методам оценки производительности распределенных
+              систем, кандидат физико-математических наук. Автор более 24 научных работ по оценке производительности, методам
+              программной инженерии и системному анализу. Профессональные интересы: Архитектура и проектирование программных
+              систем, методологии и процессы разработки ПО, распределенные вычисления и оценка производительности </p>
+          </div>
+          <div class="col-md-3" align=center>
+            <img class="rounded-circle" src="https://avatars.mds.yandex.net/get-yaevents/194464/152daa2cb6d911e687ef002590c62a5c/big_c"
+              width="140" height="140">
+            <h2>Полежаев Валентин</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis
+              consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+            </p>
+          </div>
+          <div class="col-md-3" align=center>
+            <img class="rounded-circle" src="https://mipt.ru/upload/035/f_5qklst.jpe?l=700" width="140" height="140">
+            <h2>Андрианов Андрей</h2>
+            <p>Преподавал на кафедре информатики ФИВТ курсы «Введение в программирование», «Объектно-ориентированное программирование»,
+              «Проектирование программных систем». На данный момент, помимо курсов «Концепции языков программирования» и
+              «Промышленное программирование», преподает морфологию на кафедре компьютерной лингвистики в рамках лингвистического
+              блока предметов.</p>
+            <p><a href="mailto://andrew_an@abbyy.com">andrew_an@abbyy.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="prv">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <!-- примеры задач -->
+        </div>
+        <div class="row">
+          <!-- ПРВ -->
+          <div class="col-md-4" align=center>
+            <img class="rounded-circle" src="https://image.flaticon.com/icons/svg/201/201612.svg" width="120" height="120">
+            <h3>Студенту</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at lectus quam. Interdum et malesuada fames ac
+              ante ipsum primis in faucibus. Aliquam cursus sapien ac elit porta facilisis. Donec convallis tellus vel ante
+              aliquet rhoncus. Etiam in ullamcorper tortor. Suspendisse nec neque pellentesque nulla lobortis cursus nec
+              nec magna. Integer quam magna, molestie ac tortor eu, facilisis bibendum massa. Ut rutrum lectus nulla, ut
+              blandit mauris eleifend ac. Donec lacinia lectus sed pellentesque eleifend. Nulla tempor justo in enim.</p>
+          </div>
+          <div class="col-md-4" align=center>
+            <img class="rounded-circle" src="https://image.flaticon.com/icons/svg/167/167752.svg" width="120" height="120">
+            <h3>Преподавателю</h3>
+            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized
+              by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble
+              that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will,
+              which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy
+              to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being
+              able to do what we like best, every pleasure is to be welcomed and every pain avoided. </p>
+          </div>
+          <div class="col-md-4" align=center>
+            <img class="rounded-circle" src="https://image.flaticon.com/icons/svg/201/201612.svg" width="120" height="120">
+            <h3>Специалисту</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at lectus quam. Interdum et malesuada fames ac
+              ante ipsum primis in faucibus. Aliquam cursus sapien ac elit porta facilisis. Donec convallis tellus vel ante
+              aliquet rhoncus. Etiam in ullamcorper tortor. Suspendisse nec neque pellentesque nulla lobortis cursus nec
+              nec magna. Integer quam magna, molestie ac tortor eu, facilisis bibendum massa. Ut rutrum lectus nulla, ut
+              blandit mauris eleifend ac. Donec lacinia lectus sed pellentesque eleifend. Nulla tempor justo in enim.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Контакты</h3>
+            <div>
+              <ul>
+                <li><a href="https://www.litres.ru/mett-vaysfeld/obektno-orientirovannoe-myshlenie/">Твиттер</a></li>
+                <li><a href="https://www.amazon.com/Object-Oriented-Analysis-Design-Applications-3rd/dp/020189551X/ref=sr_1_4?ie=UTF8&qid=1504605363&sr=8-4&keywords=ooad">Группа в vk.com</a></li>
+                <li><a href="http://www.ozon.ru/context/detail/id/19665827/">Группа в facebook</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h3>Где купить</h3>
+            <ul>
+              <li><a href="https://www.litres.ru/mett-vaysfeld/obektno-orientirovannoe-myshlenie/">На ЛитРес</a></li>
+              <li><a href="https://www.amazon.com/Object-Oriented-Analysis-Design-Applications-3rd/dp/020189551X/ref=sr_1_4?ie=UTF8&qid=1504605363&sr=8-4&keywords=ooad">В Amazon</a></li>
+              <li><a href="http://www.ozon.ru/context/detail/id/19665827/">В Ozon.ru</a></li>
+              <li><a href="http://dmkpress.com/catalog/computer/data/978-5-97060-554-7/">У издательства</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Overheard on Twitter</h3>
+        <a class="twitter-timeline" href="https://twitter.com/twitterdev">Tweets by @TwitterDev</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
