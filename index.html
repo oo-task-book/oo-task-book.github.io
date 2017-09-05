@@ -14,6 +14,15 @@
       margin-top: 4em;
       margin-bottom: 4em;
     }
+    .task-background {
+      background-color: #eeeeee;
+      margin: 0.5em;
+      padding: 1em;
+      width: auto;
+      height: 25em;
+      max-height: 25em;
+      overflow: hidden;
+    }
   </style>
 </head>
 
@@ -115,8 +124,47 @@
   <div class="container" id="prv">
     <div class="row">
       <div class="col-md-8">
+        <h2>Примеры из книги</h2>
         <div class="row">
           <!-- примеры задач -->
+          <div id="tasks-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#tasks-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#tasks-carousel" data-slide-to="1"></li>
+              <li data-target="#tasks-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active task-background">
+                <img src="./task-1.png" />
+                <p>Структура поисковой системы представлена на рисунке.</p>
+                <ol>
+                  <li>Покажите, что индекс <code>Index</code> может быть только двух видов – простой <code>SimpleIndex</code> и распределенный <code>DistrIndex</code>.</li>
+                  <li>Распределенный индекс через очередь сообщений <code>MsgBus</code> взаимодействует с узлами индекса <code>IdxNode</code> по протоколу <code>AMQP</code>. Высоконадежная версия очереди сообщений состоит из нескольких реплик, соединенных через <code>InLink</code>.</li>
+                  <li>Материализуйте и разместите компоненты системы согласно многозвенной архитектуре, в которой распределенная
+                    очередь сообщений располагается на выделенном сервере.</li>
+                </ol>
+              </div>
+              <div class="carousel-item jumbotron task-background">
+                  <img src="./task-2.png" class="img-fluid"/>
+                  <p>Основная нотация диаграмм деятельности.</p>
+                </div>
+              <div class="carousel-item task-background">
+                <img src="./task-3.png" class="img-fluid"/>
+                <p>На рисунке показана модель предметной области системы. Рассматривается процесс обработки данных, представленных в векторной форме.</p>
+                <ol>
+                  <li>Добавьте реализацию процесса обработки вычислением <code>Computation</code>, добавив необходимые отношения со службами предметной области, и определив поведения старта обработки <code>start</code> с параметром <code>Vector[*]</code>, подготовки <code>prepare</code> , расчета <code>calculate</code>. Последнее возвращает экземпляр результата <code>Result</code>.</li>
+                </ol>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#tasks-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            <a class="carousel-control-next" href="#tasks-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
         </div>
         <div class="row">
           <!-- ПРВ -->
